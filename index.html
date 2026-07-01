@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hesham Hamdy — Software Developer</title>
+<meta name="description" content="Hesham Hamdy — Software Developer & MIS Graduate. C++, Java, OOP, Data Structures & Algorithms.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- ambient animated background shapes -->
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb-violet"></span>
+  <span class="orb orb-cyan"></span>
+  <span class="orb orb-amber"></span>
+  <div class="grid-overlay"></div>
+</div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="logo"><span>&lt;</span>HH<span>/&gt;</span></a>
+
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="music-btn" id="musicBtn" aria-label="Toggle background music" title="Play music">
+      <svg class="icon-note" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.6"/>
+      </svg>
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <button class="burger" id="burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<audio id="bgAudio" loop preload="none">
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <p class="eyebrow mono">// junior software developer</p>
+        <h1 class="hero-name">
+          <span class="mono prompt">$</span> Hesham<br>Hamdy<span class="cursor-blink">_</span>
+        </h1>
+        <p class="hero-role mono" id="typedRole"></p>
+
+        <p class="hero-bio">
+          MIS graduate (2025) with strong fundamentals in programming and software
+          development — OOP, data structures, algorithms and databases. Motivated to
+          start a career as a junior developer and grow inside a real engineering team.
+        </p>
+
+        <div class="hero-tags">
+          <span class="chip">OOP</span>
+          <span class="chip">Data Structures</span>
+          <span class="chip">Algorithms</span>
+          <span class="chip">C++ / Java</span>
+        </div>
+
+        <div class="hero-cta">
+          <a href="mailto:heshamhamdey58@gmail.com" class="btn btn-primary">Get in touch</a>
+          <a href="#projects" class="btn btn-ghost">View projects</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <div class="frame-glow"></div>
+          <div class="frame-top">
+            <span></span><span></span><span></span>
+            <span class="frame-title mono">whoami.jsx</span>
+          </div>
+          <img src="assets/profile.jpg" alt="Portrait of Hesham Hamdy" class="profile-img">
+          <div class="frame-scan"></div>
+        </div>
+
+        <span class="badge badge-1 mono">C++</span>
+        <span class="badge badge-2 mono">Java</span>
+        <span class="badge badge-3 mono">Git</span>
+        <span class="badge badge-4 mono">OOP</span>
+      </div>
+
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span class="mono">scroll</span>
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <p class="section-eyebrow mono">01 — profile</p>
+    <h2 class="section-title">About me</h2>
+
+    <div class="about-grid">
+      <p class="about-text reveal">
+        I'm a Management Information Systems graduate based in Giza, Egypt, focused on
+        building a solid engineering foundation before specializing. My training covers
+        object‑oriented programming, data structures, algorithms and database
+        fundamentals — and I like turning that theory into small, working systems rather
+        than leaving it on paper. I'm looking for a junior developer role where I can
+        keep learning inside a real codebase, alongside people who'll push my standards up.
+      </p>
+
+      <div class="about-facts reveal">
+        <div class="fact">
+          <span class="fact-label mono">Location</span>
+          <span class="fact-value">Giza, Egypt</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label mono">Education</span>
+          <span class="fact-value">B.Sc. Management Information Systems, 2025</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label mono">Languages</span>
+          <span class="fact-value">Arabic (native) · English</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label mono">Status</span>
+          <span class="fact-value">Open to junior developer roles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section" id="skills">
+    <p class="section-eyebrow mono">02 — stack</p>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <h3 class="mono">Languages</h3>
+        <div class="tag-row">
+          <span class="tag">C++</span>
+          <span class="tag">Java</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3 class="mono">Foundations</h3>
+        <div class="tag-row">
+          <span class="tag">OOP</span>
+          <span class="tag">Data Structures</span>
+          <span class="tag">Algorithms</span>
+          <span class="tag">Database Fundamentals</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3 class="mono">Tools</h3>
+        <div class="tag-row">
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3 class="mono">Working style</h3>
+        <div class="tag-row">
+          <span class="tag">Problem Solving</span>
+          <span class="tag">Teamwork</span>
+          <span class="tag">Clean Code</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <p class="section-eyebrow mono">03 — projects</p>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-visual">
+          <svg viewBox="0 0 120 120" class="project-svg gym-svg" aria-hidden="true">
+            <circle cx="60" cy="60" r="46" class="p-ring"/>
+            <g class="p-dumbbell">
+              <rect x="20" y="54" width="80" height="12" rx="6"/>
+              <rect x="12" y="42" width="16" height="36" rx="4"/>
+              <rect x="92" y="42" width="16" height="36" rx="4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>Gym Management System</h3>
+          <p>A management system to handle gym members, subscriptions and payments,
+             built with clean, structured OOP design.</p>
+          <ul class="project-list">
+            <li>Manages members, subscriptions and payments end‑to‑end</li>
+            <li>Applies object‑oriented programming and structured design</li>
+            <li>Focused on clean, readable, maintainable code</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag tag-sm">C++ / Java</span>
+            <span class="tag tag-sm">OOP</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-visual">
+          <svg viewBox="0 0 120 120" class="project-svg bank-svg" aria-hidden="true">
+            <circle cx="60" cy="60" r="46" class="p-ring"/>
+            <g class="p-bank">
+              <polygon points="60,22 100,44 20,44" />
+              <rect x="26" y="50" width="8" height="34"/>
+              <rect x="48" y="50" width="8" height="34"/>
+              <rect x="70" y="50" width="8" height="34"/>
+              <rect x="18" y="88" width="84" height="8" rx="2"/>
+            </g>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>Bank System</h3>
+          <p>A basic banking system for managing accounts and transactions, used to
+             practice core programming and algorithmic thinking.</p>
+          <ul class="project-list">
+            <li>Handles account creation and transaction logic</li>
+            <li>Implements core programming concepts in C++ / Java</li>
+            <li>Sharpened problem‑solving and algorithmic thinking</li>
+          </ul>
+          <div class="tag-row">
+            <span class="tag tag-sm">C++ / Java</span>
+            <span class="tag tag-sm">Algorithms</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <p class="section-eyebrow mono">04 — education</p>
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-year mono">2025</span>
+          <h3>Bachelor of Management Information Systems (MIS)</h3>
+          <p class="timeline-org">Engineering University</p>
+          <p class="timeline-desc">Relevant coursework in Process Design and Project Management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-contact" id="contact">
+    <p class="section-eyebrow mono">05 — contact</p>
+    <h2 class="section-title">Let's work together</h2>
+    <p class="contact-sub reveal">
+      Open to junior developer opportunities — feel free to reach out directly.
+    </p>
+
+    <div class="contact-grid reveal">
+      <a class="contact-card" href="mailto:heshamhamdey58@gmail.com">
+        <span class="contact-label mono">Email</span>
+        <span class="contact-value">heshamhamdey58@gmail.com</span>
+      </a>
+      <a class="contact-card" href="tel:+201009277052">
+        <span class="contact-label mono">Phone</span>
+        <span class="contact-value">+20 100 927 7052</span>
+      </a>
+      <a class="contact-card" href="https://wa.me/201009277052" target="_blank" rel="noopener">
+        <span class="contact-label mono">WhatsApp</span>
+        <span class="contact-value">Chat now</span>
+      </a>
+      <div class="contact-card contact-card-static">
+        <span class="contact-label mono">Location</span>
+        <span class="contact-value">Giza, Egypt</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">© <span id="year"></span> Hesham Hamdy — built line by line.</p>
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
